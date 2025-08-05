@@ -56,45 +56,10 @@
   position: relative;
 }
 
-/* Overlay Text */
 
 
 
-/* Top Row Cards */
-.card1 {
-  width: 47%;
-  background-image: url('14.png');
-}
 
-.card2,
-.card3 {
-  width: 23.5%;
-}
-
-.card2 {
-  background-image: url('15.png');
-}
-.card3 {
-  background-image: url('16.png');
-}
-
-/* Bottom Row Cards */
-.card4,
-.card5 {
-  width: 23.5%;
-}
-
-.card4 {
-  background-image: url('17.png');
-}
-.card5 {
-  background-image: url('18.png');
-}
-
-.card6 {
-  width: 47%;
-  background-image: url('19.png');
-}
 
 /* Responsive Adjustments */
 /* @media (max-width: 1024px) {
@@ -224,3 +189,4 @@
     line-height: 22px;
   }
 }
+
