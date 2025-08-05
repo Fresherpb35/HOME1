@@ -420,4 +420,33 @@
     gap: 13px;
     width: 50px;
   }
+  .bottom-card.small-card-2 .box {
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 34px;
+  background-color: rgba(26, 26, 26, 0.11);
+}
+
+.bottom-card.small-card-2 .inner-tri {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.inner-tri img {
+  width: 17.89px;
+  height: 19.78px;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 1);
+}
 }
