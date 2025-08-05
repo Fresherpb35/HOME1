@@ -124,7 +124,7 @@
 }
 
 .bottom-card.small-card-2 .box {
- width: 68px;
+  width: 68px;
   height: 68px;
   position: absolute;
   top: 120px;
@@ -135,7 +135,7 @@
 }
 
 .bottom-card.small-card-2 .inner-tri {
- width: 22px;
+  width: 22px;
   height: 22px;
   position: absolute;
   top: 20px;
@@ -160,7 +160,6 @@
   aspect-ratio: 3 / 4;
   border-radius: 16px;
   overflow: hidden;
-  
 }
 
 .right-column img {
@@ -188,7 +187,7 @@
 
 .sale6,
 .sale7 {
- width: 100px;
+  width: 100px;
   height: 33px;
   border-radius: 33px;
   background-color: rgba(31, 75, 67, 1);
@@ -219,7 +218,7 @@
 }
 
 .right-column .text23 {
-   width: 229px;
+  width: 229px;
   height: 30px;
   font-size: 26px;
   font-weight: 500;
@@ -227,13 +226,11 @@
   position: absolute;
   bottom: 12%;
   left: 5%;
- 
-  font-weight: 500;
   color: rgba(255, 255, 255, 1);
   z-index: 10;
 }
 
-/* .property-location2 {
+.property-location2 {
   position: absolute;
   bottom: 4%;
   left: 5%;
@@ -241,30 +238,23 @@
   align-items: center;
   gap: 8px;
   z-index: 10;
-} */
+}
 
 .property-location2 img {
-   width: 20px;
+  width: 20px;
   height: 20px;
-  position: absolute;
-  top: 599.38px;
-  left: 35px;
+  position: relative;
+  bottom: 16px;
   filter: brightness(0) invert(10);
-  z-index: 10;
 }
 
 .property-location2 p {
-   width: 168.25px;
-  height: 20px;
-  position: absolute;
-  top: 595.38px;
-  left: 60px;
   font-size: 16px;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
-  z-index: 10;
 }
 
+/* --- FEATURE (SAME FOR ALL SCREENS) --- */
 .Feature {
   position: absolute;
   bottom: 3px;
@@ -280,11 +270,9 @@
 }
 
 .Price {
-font-size: 20px;
+  font-size: 20px;
   font-weight: bold;
   color: rgba(255, 255, 255, 1);
-  width: 89px;
-  height: 24px;
 }
 
 .feature-right {
@@ -302,8 +290,6 @@ font-size: 20px;
 .bed1,
 .bath1,
 .bath2 {
-  width: 50.94px;
-  height: 19px;
   display: flex;
   gap: 13px;
   align-items: center;
@@ -311,381 +297,111 @@ font-size: 20px;
   font-weight: 500;
   margin-left: 3px;
 }
+
 .bed1 span,
 .bath1 span,
 .bath2 span {
-  width: 9.38px;
-  height: 17.6px;
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
   font-size: 16px;
 }
+
 .bed1,
 .bath1 {
-   border-right: 1px solid rgba(255, 255, 255, 1);
-
+  border-right: 1px solid rgba(255, 255, 255, 1);
 }
 
-/* --- RESPONSIVENESS --- */
+/* --- RESPONSIVE BREAKPOINTS --- */
 
-/* Tablets (≤122100px) */
-@media (max-width: 1225px) {
+/* Large Tablets (769px–1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
   .property-layout {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .left-column,
-  .right-column {
-    flex: 1 1 100%;
-    max-width: 700px;
-  }
-
-  .bottom-left-row {
-    flex-direction: row;
-    flex-wrap: wrap;
     gap: 15px;
   }
-
-  .text23 {
-    font-size: clamp(18px, 3vw, 22px);
-    bottom: 20%;
-    left: 5%;
-    width: 250px;
-    
+  .left-column {
+    flex: 1 1 60%;
   }
-  .bottom-card {
-    flex: 1 1 48%;
-    aspect-ratio: 1 / 1;
+  .right-column {
+    flex: 1 1 40%;
+    aspect-ratio: 4 / 5;
   }
-   .bottom-card .text {
-    font-size: clamp(20px, 3vw, 32px);
-    top: 10%;
-    left: 10%;
+  .bottom-card,
+  .top-left-card {
+    aspect-ratio: 2.5 / 1.5;
   }
-  .bottom-card span,
-  .bottom-card .text2 {
-    font-size: clamp(12px, 2vw, 16px);
-    left: 10%;
-  }
-  .Feature {
-    bottom: 2%;
-    left: 2%;
-    width: 90%;
-  }
-
-  
-.property-location2 img {
-   width: 20px;
-  height: 20px;
-  position: absolute;
-top: 435px;  left: 35px;
-  filter: brightness(0) invert(10);
-  z-index: 10;
-}
-
-.property-location2 p {
-   width:250px;
-  height: 20px;
-  position: absolute;
-  top: 430px;
-  left: 48px;
-  font-size: 16px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 1);
-  z-index: 10;
-}
-
- .bottom-card,
-  .top-left-card
-   {
-    width: 100%;
-    aspect-ratio: 6 / 3.5; /* wider, less tall */
-  }
-  .right-column{
-    width: 100%;
-   aspect-ratio: 6 / 4.5;
-  }
-
-
-    .bottom-card .text {
-    font-size: 24px;
-    line-height: 32px;
-    width: 60px;
-    height: 32px;
-    top: 20px;
-    left: 20px;
-  }
-
-  .bottom-card span {
-    font-size: 14px;
-    line-height: 24px;
-    width: 60px;
-    height: 24px;
-    top: 55px;
-    left: 20px;
-  }
-
-  .bottom-card .text2 {
-    font-size: 12px;
-    line-height: 20px;
-    width: 230px;
-    height: 40px;
-    top: 84px;
-    left: 12px;
-  }
-  .bottom-card.small-card-2 .box {
-    width: 40px;
-    height: 40px;
-    top: 80px;
-  }
-
-  .bottom-card.small-card-2 .inner-tri {
-    width: 16px;
-    height: 16px;
-    top: 12px;
-  }
-
-  .inner-tri img {
-    width: 12px;
-    height: 14px;
-    top: 3px;
+  .property-location2 p {
+    font-size: 15px;
   }
 }
 
-
-/* Mobiles (≤768px) */
-@media (max-width: 768px) {
+/* Tablets (481px–768px) */
+@media (max-width: 768px) and (min-width: 481px) {
   .BestProp {
     padding: 30px 10px;
   }
-
   .property-layout {
     gap: 10px;
-  }
-
-  .bottom-left-row {
     flex-direction: column;
   }
-
+  .bottom-left-row {
+    flex-direction: column;
+    gap: 10px;
+  }
   .bottom-card,
-  .top-left-card
- {
+  .top-left-card {
     width: 100%;
-    aspect-ratio: 4 / 2.5;
+    aspect-ratio: 6 / 3.5;
   }
   .right-column {
-   width: 100%;
+    width: 100%;
     aspect-ratio: 3 / 4;
   }
-
-  .Feature {
-    width: 90%;
-    bottom: 5%;
-    left: 5%;
-  }
-  
-  .right-column .text23 {
-    font-size: 16px;
-    line-height: 20px;
-    width: 250px;
-    height: 20px;
-    top: 327px;
-    left: -6px;
-  }
-
   .property-location2 img {
-    width: 12px;
-    height: 12px;
-    top: 363px;
-    left: 15px;
+    width: 16px;
+    height: 16px;
   }
-
   .property-location2 p {
-    font-size: 11px;
-    width: 170px;
-    height: 14px;
-    top: 360px;
-    left: 19px;
+    font-size: 14px;
   }
-
 }
 
-/* Extra Small (≤480px) */
+/* Mobiles (≤480px) */
 @media (max-width: 480px) {
   .BestProp {
     padding: 20px 8px;
   }
-
   .BestProp h2 {
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 6px;
+    font-size: clamp(20px, 6vw, 24px);
+    line-height: 1.2;
   }
-
   .BestProp p {
-    font-size: 13px;
-    line-height: 20px;
-    margin-bottom: 15px;
+    font-size: clamp(12px, 4vw, 14px);
+    line-height: 1.6;
   }
-
-  .property-layout {
-    gap: 8px;
-  }
-
+  .bottom-card,
   .top-left-card {
-    height: 180px;
+    width: 100%;
+    aspect-ratio: 4 / 2.5;
   }
-
-  .bottom-card {
-    height: 180px;
-  }
-
-  .small-card-1,
-  .small-card-2 {
-    height: 180px;
-  }
-
-  .bottom-card .text {
-    font-size: 20px;
-    line-height: 28px;
-    width: 50px;
-    height: 28px;
-    top: 15px;
-    left: 15px;
-  }
-
-  .bottom-card span {
-    font-size: 12px;
-    line-height: 20px;
-    width: 50px;
-    height: 20px;
-    top: 45px;
-    left: 15px;
-  }
-
-  .bottom-card .text2 {
-    font-size: 11px;
-    line-height: 18px;
-    width: 300px;
-    height: 36px;
-    top: 68px;
-    left: 15px;
-  }
-
- 
-
-  .bottom-card.small-card-2 .box {
-    width: 35px;
-    height: 35px;
-    top: 70px;
-  }
-
-  .bottom-card.small-card-2 .inner-tri {
-    width: 14px;
-    height: 14px;
-    top: 10px;
-  }
-
-  .inner-tri img {
-    width: 10px;
-    height: 12px;
-    top: 2px;
-  }
-
   .right-column {
-    height: 350px;
+    width: 100%;
+    aspect-ratio: 3 / 3.5;
   }
-
-  .sale6,
-  .sale7 {
-    width: 60px;
-    height: 20px;
-    top: 10px;
-    left: 8px;
-  }
-
-  .sale7 {
-    left: 80px;
-  }
-
-  .sale6 p,
-  .sale7 p {
-    position: absolute;
-    top: 0px;
-    font-size: 9px;
-  }
-
-  .right-column .text23 {
+  .Price {
     font-size: 16px;
-    line-height: 20px;
-    width: 230px;
-    height: 20px;
-    top: 327px;
-    left: -6px;
   }
-
   .property-location2 img {
     width: 12px;
     height: 12px;
-    top: 363px;
-    left: 15px;
   }
-
   .property-location2 p {
     font-size: 11px;
-    width: 170px;
-    height: 14px;
-    top: 360px;
-    left: 19px;
   }
 
-  .Feature {
-    width: calc(100% - 30px);
-    padding: 4px 8px;
-    gap: 8px;
-    bottom: 1px;
-    left: 8px;
-  }
 
-  .Price {
-    font-size: 14px;
-    width: 60px;
-    height: 18px;
+  .right-column .text23{
+    font-size: 16px;
+    margin-left:-50px;
+    
   }
-
-  .bed1,
-  .bath1,
-  .bath2 {
-    width: 35px;
-    height: 14px;
-    gap: 6px;
-  }
-
-  .feature-right img {
-    width: 10px;
-    height: 10px;
-  }
-
-  .bed1 span,
-  .bath1 span,
-  .bath2 span {
-    font-size: 11px;
-    width: 6px;
-    height: 12px;
-  }
-}    
-  @media (max-width: 768px) {
-  .bottom-card,
-  .top-left-card
-   {
-    width: 100%;
-    aspect-ratio: 6 / 3.5; /* wider, less tall */
-  }
-
 }
-
-
-
-
-
