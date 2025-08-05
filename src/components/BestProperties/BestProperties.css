@@ -351,6 +351,7 @@ font-size: 20px;
     font-size: clamp(18px, 3vw, 22px);
     bottom: 20%;
     left: 5%;
+    width: 150px;
   }
   .bottom-card {
     flex: 1 1 48%;
@@ -383,7 +384,7 @@ top: 435px;  left: 35px;
 }
 
 .property-location2 p {
-   width: 168.25px;
+   width: 190.25px;
   height: 20px;
   position: absolute;
   top: 430px;
@@ -592,7 +593,7 @@ top: 435px;  left: 35px;
   .right-column .text23 {
     font-size: 16px;
     line-height: 20px;
-    width: 180px;
+    width: 230px;
     height: 20px;
     top: 327px;
     left: -10px;
@@ -607,7 +608,7 @@ top: 435px;  left: 35px;
 
   .property-location2 p {
     font-size: 11px;
-    width: 120px;
+    width: 170px;
     height: 14px;
     top: 360px;
     left: 27px;
@@ -657,5 +658,6 @@ top: 435px;  left: 35px;
   }
 
 }
+
 
 
