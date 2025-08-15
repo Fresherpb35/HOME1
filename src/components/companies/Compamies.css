@@ -1,0 +1,46 @@
+.client {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.client-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.cl-logo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  padding: 0 40px; /* Added margin space left & right */
+}
+
+.cl-logo img {
+  max-width: 100px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  width: 99px;
+  height: 31px;
+}
+
+.cl-logo img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .client-text {
+    font-size: 1rem;
+  }
+  
+  .cl-logo {
+    padding: 0 20px; /* Slightly reduced padding for smaller screens */
+  }
+
+  .cl-logo img {
+    max-width: 80px;
+  }
+}

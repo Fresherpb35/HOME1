@@ -1,0 +1,215 @@
+.luxury-container {
+  background-color: #204d44;
+  padding: 60px;
+  color: white;
+  border-radius: 24px;
+  margin: 20px;
+}
+
+.luxury-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
+}
+
+.image-section {
+  position: relative;
+}
+
+.main-image {
+  width: 638px;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin-top: 100px;
+  max-width: 100%; /* responsive */
+}
+
+/* Overlay image directly */
+.image-section img:nth-child(2) {
+  position: absolute;
+  top: 140px;
+  left: 20px;
+  width: 254px; /* adjust icon size */
+  height: 100px;
+}
+
+/* Text section */
+.text-section {
+  max-width: 400px;
+  margin-left: 100px;
+}
+
+.text-section h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  line-height: 52px;
+}
+
+.text-section p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30.4px;
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.learn-btn {
+  margin-top: 20px;
+  background: #e6c667;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.learn-btn .arrow {
+  margin-left: 8px;
+}
+
+/* Stats section */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-top: 50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stats > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers both h3 and p horizontally */
+  justify-content: center; /* Centers vertically if needed */
+  padding: 50px;
+  box-sizing: border-box;
+  max-width: 250px; /* Keeps both h3 & p aligned in same width */
+  margin: 0 auto;
+}
+
+.stats h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgb(166, 129, 26) !important;
+}
+
+.stats p {
+  font-size: 16px;
+  color: white !important;
+  line-height: 1.4;
+}
+
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .luxury-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-section {
+    margin-left: 0;
+    max-width: 600px;
+  }
+
+  .main-image {
+    margin-top: 40px;
+  }
+
+  /* Keep overlay image in same spot */
+  .image-section img:nth-child(2) {
+    top: 100px;
+    left: 15px;
+    width: 80px;
+  }
+   .stats {
+    grid-template-columns: repeat(2, 1fr);
+     /* 2 per row */
+      gap: 15px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .luxury-container {
+    padding: 40px 20px;
+  }
+
+  .text-section h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .text-section p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .stats h3 {
+    font-size: 28px;
+  }
+    .image-section img:nth-child(2) {
+    top: 80px;
+    left: 10px;
+    width: 160px;
+    height: 70px;
+  }
+   .stats > div {
+    flex: 1 1 50%; /* 2 items per row */
+    max-width: 50%;
+  }
+  @media (max-width: 768px) {
+  .stats p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: white !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  .stats {
+    grid-template-columns: 1fr;
+    gap: 10px; /* even smaller gap for mobiles */
+  }
+}
+
+}
+
+@media (max-width: 480px) {
+  .image-section img:nth-child(2) {
+    top: 80px;
+    left: 10px;
+    width: 130px;
+    height: 50px;
+  }
+   .stats > div {
+    flex: 1 1 100%; /* 1 item per row */
+    max-width: 100%;
+  }
+   .stats p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  .stats {
+    grid-template-columns: 1fr;
+    gap: 5px; /* even smaller gap for mobiles */
+  }
+}
+@media (max-width: 600px) {
+  .stats {
+    grid-template-columns: 1fr;
+     /* 1 per row */
+      gap: 5px;
+  }
+}

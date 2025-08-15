@@ -1,0 +1,252 @@
+/* ===== FOOTER BASE ===== */
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+/* ===== FOOTER TOP ===== */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* ===== FOOTER MAIN GRID ===== */
+.footer-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.footer-col h4 {
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.47);
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.footer-col ul li:hover {
+  text-decoration: underline;
+}
+
+.footer-col p {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  max-width: 370px;
+}
+
+/* ===== SUBSCRIBE BOX ===== */
+.subscribe-box {
+  display: flex;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  max-width: 370px;
+  height: 57px;
+}
+
+.subscribe-box input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.subscribe-box button {
+  background: #333;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 44px;
+  font-size: 15px;
+  font-weight: 500;
+  width: 117px;
+  height: 42px;
+}
+
+/* ===== APP BUTTONS ===== */
+.app-btn {
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  width: 210px;
+  text-align: left;
+  height: 63px;
+  position: relative;
+}
+
+.app-btn img {
+  width: 19px;
+  height: 24px;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.btn-info {
+  width: 118px;
+  height: 37px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  margin-left: 55px;
+}
+
+.btn-info p {
+  margin-top: -2px;
+  margin-left: 15px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.btn-info h3 {
+  margin-left: 15px;
+  margin-top: 4px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* ===== FOOTER BOTTOM ===== */
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+hr {
+  border: 0.5px solid #222;
+  margin: 20px 0;
+}
+
+.footer-col li {
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #fff;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+
+/* Large screens keep spacing */
+@media (min-width: 1025px) {
+  .footer-main .footer-col:nth-of-type(2) {
+    padding-left: 120px;
+  }
+  .footer-main .footer-col:nth-of-type(3) {
+    padding-left: 80px;
+  }
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 30px;
+  }
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .footer-main {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .footer-main .footer-col:nth-of-type(2),
+  .footer-main .footer-col:nth-of-type(3) {
+    padding-left: 0;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .footer {
+    padding: 20px;
+  }
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .footer-social {
+    justify-content: center;
+  }
+  .footer-main {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .footer-col p {
+    max-width: 100%;
+    margin: 10px auto;
+  }
+  .subscribe-box {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+  }
+  .subscribe-box input {
+    padding: 12px;
+    text-align: center;
+  }
+  .subscribe-box button {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .app-btn {
+    width: 210px; /* same fixed size as desktop */
+    text-align: left; /* icon left, text right */
+    margin: 8px auto; /* center horizontally but don't stretch */
+  }
+  .btn-info {
+    width: 113px;
+    height: 37px;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    margin-left: 55px; /* same spacing from icon */
+  }
+  
+.btn-info {
+  width: 118px;
+  height: 37px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  margin-left: 55px;
+}
+
+.btn-info p {
+  margin-top: -2px;
+  margin-left: 15px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+}
+}
+

@@ -1,0 +1,87 @@
+/* AGENT CONTAINER */
+.agent-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 248, 246, 1);
+  border-radius: 20px;
+  padding: 40px 60px;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+/* TEXT STYLING */
+.agent-text h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 130px;
+  color: rgba(26, 26, 26, 1);
+  max-width: 100%;
+  line-height: 30px;
+}
+
+.agent-text p {
+  margin-left: 130px;
+  margin-top: 3px;
+  color: rgba(26, 26, 26, 1);
+  font-size: 17px;
+  line-height: 32px;
+}
+
+/* BUTTON */
+.agent-button {
+  background-color: rgba(231, 200, 115, 1);
+  color: rgba(26, 26, 26, 1);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-right: 100px;
+  cursor: pointer;
+}
+
+/* ============================= */
+/* RESPONSIVE BREAKPOINTS */
+/* ============================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .agent-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .agent-text h2,
+  .agent-text p {
+    margin-left: 0;
+  }
+
+  .agent-button {
+    margin: 20px 0 0 0;
+    margin-right: 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .agent-text h2 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .agent-text p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .agent-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+}

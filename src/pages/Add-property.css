@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f6f8;
+  font-family: 'Inter', sans-serif;
+  color: #2d3e50;
+  line-height: 1.5;
+}
+
+/* ===== Form Container ===== */
+.container {
+  padding: 40px;
+  max-width: 900px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* ===== Heading ===== */
+.heading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #1f4b43;
+}
+
+/* ===== Step Buttons ===== */
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.info,
+.photos {
+  padding: 14px 26px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+}
+
+.info {
+  background: linear-gradient(135deg, #1f4b43, #2a6e61);
+  color: #ffffff;
+}
+
+.photos {
+  background: #f9fbfa;
+  border: 2px solid #1f4b43;
+  color: #1f4b43;
+}
+
+/* ===== Section Titles ===== */
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f4b43;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #e4e9ec;
+}
+
+/* ===== Form Layout ===== */
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+
+
+/* Add bottom padding to content so it doesn't overlap footer */
+.content-wrapper {
+  padding-bottom: 80px; /* should be >= footer height */
+}
+
+
+
+
+@media (max-width: 768px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Labels ===== */
+.label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  font-size: 14px;
+  color: #2d3e50;
+}
+
+/* ===== Inputs & Textareas ===== */
+.input,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccd4da;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #fafbfc;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.input:focus,
+textarea:focus {
+  border-color: #1f4b43;
+  background-color: white;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.input-info,
+.image-info {
+  font-size: 12px;
+  color: #6c7a89;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+/* ===== Buttons ===== */
+.button {
+  background: linear-gradient(135deg, #1f4b43, #2a6e61);
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #1f4b43;
+}
+
+.button-secondary {
+  background: #ffffff;
+  border: 1px solid #ccd4da;
+  color: #2d3e50;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button-secondary:hover {
+  background: #f4f6f8;
+}
+

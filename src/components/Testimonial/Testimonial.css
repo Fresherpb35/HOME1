@@ -1,0 +1,240 @@
+.testimonial-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 160px;
+  padding: 90px;
+  border-bottom: 1px solid rgba(225, 225, 225, 1);
+  margin: 70px;
+  margin-top: 30px;
+  height: auto; /* allow flexible height */
+  flex-wrap: wrap; /* stack content when needed */
+}
+
+.testimonial-section .testimonial-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.testimonial-section .stats {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.testimonial-section .stats h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.testimonial-section .stats p {
+  margin: 4px 0;
+  color: black !important;
+}
+
+.testimonial-section .stats .stars {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* Left Info */
+.testimonial-section .testimonial-info h2 {
+  margin-top: 190px;
+  font-size: 40px;
+  font-weight: 550;
+  line-height: 52px;
+  color: rgba(26, 26, 26, 1);
+}
+
+.testimonial-section .testimonial-info .description {
+  color: rgba(26, 26, 26, 1);
+  margin: 15px 0 30px;
+  line-height: 30.4px;
+  font-size: 16px;
+}
+
+.testimonial-section .stats {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  margin: 0;
+  margin-top: -20px;
+  flex-wrap: wrap;
+}
+
+.testimonial-section .stats h3 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 33px;
+  color: rgba(26, 26, 26, 1) !important;
+}
+
+.testimonial-section .stats p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgba(26, 26, 26, 1) !important;
+}
+
+.testimonial-section .stars {
+  color: gold;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Right Card */
+.testimonial-section .testimonial-card {
+  max-width: 500px;
+  margin-top: 50px;
+}
+
+.testimonial-section .profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.testimonial-section .profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-section .profile h4 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 22px;
+  color: rgba(26, 26, 26, 1);
+}
+
+.testimonial-section .role {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(26, 26, 26, 1);
+}
+
+.testimonial-section .quote {
+  margin: 20px 0;
+  font-weight: 600;
+  font-size: 19px;
+  color: rgba(26, 26, 26, 1);
+  line-height: 1.6;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.btn-icon {
+  width: 20px; /* adjust size as needed */
+  height: 20px;
+}
+.btn-icon {
+  width: 60px; /* adjust size as needed */
+  height: 40px;
+}
+
+/* ========= Responsive Breakpoints ========= */
+
+/* Large Tablets (≤ 1024px) */
+@media (max-width: 1024px) {
+  .testimonial-section {
+    gap: 80px;
+    padding: 60px;
+  }
+
+  .testimonial-section .testimonial-info h2 {
+    font-size: 32px;
+    line-height: 42px;
+    margin-top: 40px;
+  }
+
+  .testimonial-section .stats {
+    gap: 40px;
+  }
+}
+
+/* Tablets & Small Laptops (≤ 768px) */
+@media (max-width: 768px) {
+  .testimonial-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .testimonial-section .testimonial-info h2 {
+    font-size: 28px;
+    line-height: 38px;
+    margin-top: 20px;
+  }
+
+  .testimonial-section .testimonial-info .description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .testimonial-section .stats {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .testimonial-section .testimonial-card {
+    margin-top: 20px;
+  }
+}
+
+/* Phones (≤ 480px) */
+@media (max-width: 480px) {
+  .testimonial-section .testimonial-info h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .testimonial-section .stats {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .testimonial-section .stats h3 {
+    font-size: 22px;
+  }
+
+  .testimonial-section .stats p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .testimonial-section .profile img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .testimonial-section .quote {
+    font-size: 16px;
+  }
+
+  .testimonial-section .nav-btn {
+    width: 50px;
+    height: 35px;
+    font-size: 16px;
+  }
+}
